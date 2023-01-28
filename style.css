@@ -1,0 +1,120 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #ff4500;
+}
+
+h1
+{
+    margin-top: 50px;
+}
+
+.clock 
+{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid #ff4500;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face 
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+}
+
+.number
+{
+    color: #ff4500;
+    font-size: 26px;
+}
+
+.num12
+{
+    position: absolute;
+    top: 0;
+    right: 47%;
+}
+
+.num9
+{
+    position: absolute;
+    left: 0;
+    bottom: 47%;
+}
+
+.num6
+{
+    position: absolute;
+    bottom: 0;
+    right: 47%;
+}
+
+.num3
+{
+    position: absolute;
+    right: 0;
+    bottom: 47%;
+}
+
+p
+{
+    position: absolute;
+    bottom: 8%;
+    right: 38%;
+}
+
+.hand 
+{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+
+.hour-hand
+{
+    background: green;
+    height: 6px;
+}
+
+.min-hand
+{
+    background: blue;
+    height: 4px;
+}
+
+.second-hand
+{
+    background: red;
+    height: 2px;
+}
